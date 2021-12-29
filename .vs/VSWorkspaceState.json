@@ -1,0 +1,10 @@
+{
+  "ExpandedNodes": [
+    "",
+    "\\API",
+    "\\API\\Data",
+    "\\API\\Data\\Migrations"
+  ],
+  "SelectedNode": "\\API\\Data\\Migrations\\20211228201640_InitialCreate.cs",
+  "PreviewInSolutionExplorer": false
+}
