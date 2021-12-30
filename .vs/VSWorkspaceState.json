@@ -2,9 +2,9 @@
   "ExpandedNodes": [
     "",
     "\\API",
-    "\\API\\Data",
+    "\\API\\Controllers",
     "\\API\\Data\\Migrations"
   ],
-  "SelectedNode": "\\API\\Data\\Migrations\\20211228201640_InitialCreate.cs",
+  "SelectedNode": "\\API\\API.csproj",
   "PreviewInSolutionExplorer": false
 }
