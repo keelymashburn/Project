@@ -1,9 +1,11 @@
 {
   "version": 2,
-  "dgSpecHash": "WmVPhEHNXGDa97WWW749lWq4BoaaCI0Vei/nLppkc24/gs0bgRLNKdON0L5kQtNHq7FMRxjKTqrzttM9vvjMzQ==",
+  "dgSpecHash": "t5oxk2CtaFx1Oi7nruIg4ejYFfBpJDkpNx6530FWMAAXXoFEBuoAADnz7Bm0hNuzR/PhAC3Cq2mDEXZeYafYEA==",
   "success": true,
   "projectFilePath": "C:\\Users\\keely.mashburn\\Documents\\GitHub\\Project\\API\\API.csproj",
   "expectedPackageFiles": [
+    "C:\\Users\\keely.mashburn\\.nuget\\packages\\automapper\\10.1.1\\automapper.10.1.1.nupkg.sha512",
+    "C:\\Users\\keely.mashburn\\.nuget\\packages\\automapper.extensions.microsoft.dependencyinjection\\8.1.1\\automapper.extensions.microsoft.dependencyinjection.8.1.1.nupkg.sha512",
     "C:\\Users\\keely.mashburn\\.nuget\\packages\\humanizer.core\\2.8.26\\humanizer.core.2.8.26.nupkg.sha512",
     "C:\\Users\\keely.mashburn\\.nuget\\packages\\microsoft.aspnetcore.authentication.jwtbearer\\5.0.4\\microsoft.aspnetcore.authentication.jwtbearer.5.0.4.nupkg.sha512",
     "C:\\Users\\keely.mashburn\\.nuget\\packages\\microsoft.csharp\\4.7.0\\microsoft.csharp.4.7.0.nupkg.sha512",
@@ -46,6 +48,7 @@
     "C:\\Users\\keely.mashburn\\.nuget\\packages\\system.diagnostics.diagnosticsource\\5.0.1\\system.diagnostics.diagnosticsource.5.0.1.nupkg.sha512",
     "C:\\Users\\keely.mashburn\\.nuget\\packages\\system.identitymodel.tokens.jwt\\6.15.0\\system.identitymodel.tokens.jwt.6.15.0.nupkg.sha512",
     "C:\\Users\\keely.mashburn\\.nuget\\packages\\system.memory\\4.5.3\\system.memory.4.5.3.nupkg.sha512",
+    "C:\\Users\\keely.mashburn\\.nuget\\packages\\system.reflection.emit\\4.7.0\\system.reflection.emit.4.7.0.nupkg.sha512",
     "C:\\Users\\keely.mashburn\\.nuget\\packages\\system.security.cryptography.cng\\4.5.0\\system.security.cryptography.cng.4.5.0.nupkg.sha512"
   ],
   "logs": []

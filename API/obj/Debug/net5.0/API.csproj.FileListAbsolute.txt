@@ -62,3 +62,6 @@ C:\Users\keely.mashburn\Documents\GitHub\Project\API\bin\Debug\net5.0\System.Ide
 C:\Users\keely.mashburn\Documents\GitHub\Project\API\bin\Debug\net5.0\Microsoft.AspNetCore.Authentication.JwtBearer.dll
 C:\Users\keely.mashburn\Documents\GitHub\Project\API\bin\Debug\net5.0\Microsoft.IdentityModel.Protocols.dll
 C:\Users\keely.mashburn\Documents\GitHub\Project\API\bin\Debug\net5.0\Microsoft.IdentityModel.Protocols.OpenIdConnect.dll
+C:\Users\keely.mashburn\Documents\GitHub\Project\API\bin\Debug\net5.0\Data\UserSeedData.json
+C:\Users\keely.mashburn\Documents\GitHub\Project\API\bin\Debug\net5.0\AutoMapper.dll
+C:\Users\keely.mashburn\Documents\GitHub\Project\API\bin\Debug\net5.0\AutoMapper.Extensions.Microsoft.DependencyInjection.dll
