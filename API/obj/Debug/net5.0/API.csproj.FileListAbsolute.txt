@@ -65,3 +65,6 @@ C:\Users\keely.mashburn\Documents\GitHub\Project\API\bin\Debug\net5.0\Microsoft.
 C:\Users\keely.mashburn\Documents\GitHub\Project\API\bin\Debug\net5.0\Data\UserSeedData.json
 C:\Users\keely.mashburn\Documents\GitHub\Project\API\bin\Debug\net5.0\AutoMapper.dll
 C:\Users\keely.mashburn\Documents\GitHub\Project\API\bin\Debug\net5.0\AutoMapper.Extensions.Microsoft.DependencyInjection.dll
+C:\Users\keely.mashburn\Documents\GitHub\Project\API\bin\Debug\net5.0\CloudinaryDotNet.dll
+C:\Users\keely.mashburn\Documents\GitHub\Project\API\bin\Debug\net5.0\Microsoft.Extensions.WebEncoders.dll
+C:\Users\keely.mashburn\Documents\GitHub\Project\API\bin\Debug\net5.0\Newtonsoft.Json.dll
