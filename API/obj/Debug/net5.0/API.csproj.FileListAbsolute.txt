@@ -1,5 +1,4 @@
 C:\Users\keely.mashburn\Documents\GitHub\Project\API\bin\Debug\net5.0\appsettings.Development.json
-C:\Users\keely.mashburn\Documents\GitHub\Project\API\bin\Debug\net5.0\appsettings.json
 C:\Users\keely.mashburn\Documents\GitHub\Project\API\bin\Debug\net5.0\API.exe
 C:\Users\keely.mashburn\Documents\GitHub\Project\API\bin\Debug\net5.0\API.deps.json
 C:\Users\keely.mashburn\Documents\GitHub\Project\API\bin\Debug\net5.0\API.runtimeconfig.json
@@ -68,3 +67,4 @@ C:\Users\keely.mashburn\Documents\GitHub\Project\API\bin\Debug\net5.0\AutoMapper
 C:\Users\keely.mashburn\Documents\GitHub\Project\API\bin\Debug\net5.0\CloudinaryDotNet.dll
 C:\Users\keely.mashburn\Documents\GitHub\Project\API\bin\Debug\net5.0\Microsoft.Extensions.WebEncoders.dll
 C:\Users\keely.mashburn\Documents\GitHub\Project\API\bin\Debug\net5.0\Newtonsoft.Json.dll
+C:\Users\keely.mashburn\Documents\GitHub\Project\API\bin\Debug\net5.0\appsettings.json
