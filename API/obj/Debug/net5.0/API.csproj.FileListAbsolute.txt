@@ -68,3 +68,8 @@ C:\Users\keely.mashburn\Documents\GitHub\Project\API\bin\Debug\net5.0\Cloudinary
 C:\Users\keely.mashburn\Documents\GitHub\Project\API\bin\Debug\net5.0\Microsoft.Extensions.WebEncoders.dll
 C:\Users\keely.mashburn\Documents\GitHub\Project\API\bin\Debug\net5.0\Newtonsoft.Json.dll
 C:\Users\keely.mashburn\Documents\GitHub\Project\API\bin\Debug\net5.0\appsettings.json
+C:\Users\keely.mashburn\Documents\GitHub\Project\API\bin\Debug\net5.0\Microsoft.AspNetCore.Cryptography.Internal.dll
+C:\Users\keely.mashburn\Documents\GitHub\Project\API\bin\Debug\net5.0\Microsoft.AspNetCore.Cryptography.KeyDerivation.dll
+C:\Users\keely.mashburn\Documents\GitHub\Project\API\bin\Debug\net5.0\Microsoft.AspNetCore.Identity.EntityFrameworkCore.dll
+C:\Users\keely.mashburn\Documents\GitHub\Project\API\bin\Debug\net5.0\Microsoft.Extensions.Identity.Core.dll
+C:\Users\keely.mashburn\Documents\GitHub\Project\API\bin\Debug\net5.0\Microsoft.Extensions.Identity.Stores.dll
