@@ -2,8 +2,7 @@
   "ExpandedNodes": [
     "",
     "\\API",
-    "\\API\\Data",
-    "\\API\\Data\\Migrations"
+    "\\API\\Data"
   ],
   "SelectedNode": "\\CourseProject.sln",
   "PreviewInSolutionExplorer": false
