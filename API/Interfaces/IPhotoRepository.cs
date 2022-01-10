@@ -12,3 +12,4 @@ namespace API.Interfaces
         void RemovePhoto(Photo photo);
     }
 }
+ 
