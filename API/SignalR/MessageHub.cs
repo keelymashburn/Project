@@ -13,16 +13,16 @@ namespace API.SignalR
     public class MessageHub : Hub
     {
         private readonly IMapper _mapper;
-        private readonly IUnitOfWork _unitOfWork;
         private readonly IHubContext<PresenceHub> _presenceHub;
         private readonly PresenceTracker _tracker;
-        public MessageHub(IUnitOfWork unitOfWork, IMapper mapper,
-            IHubContext<PresenceHub> presenceHub, PresenceTracker tracker)
+        private readonly IUnitOfWork _unitOfWork;
+        public MessageHub(IMapper mapper, IUnitOfWork unitOfWork, IHubContext<PresenceHub> presenceHub,
+            PresenceTracker tracker)
         {
+            _unitOfWork = unitOfWork;
             _tracker = tracker;
             _presenceHub = presenceHub;
             _mapper = mapper;
-            _unitOfWork = unitOfWork;
         }
 
         public override async Task OnConnectedAsync()
