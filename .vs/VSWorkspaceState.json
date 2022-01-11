@@ -1,7 +1,8 @@
 {
   "ExpandedNodes": [
     "",
-    "\\API"
+    "\\API",
+    "\\API\\Entities"
   ],
   "SelectedNode": "\\CourseProject.sln",
   "PreviewInSolutionExplorer": false
