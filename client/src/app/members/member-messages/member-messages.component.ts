@@ -1,5 +1,6 @@
 import { ChangeDetectionStrategy, Component, Input, OnInit, ViewChild } from '@angular/core';
 import { NgForm } from '@angular/forms';
+import { DayPickerComponent } from 'ngx-bootstrap/datepicker';
 import { Message } from 'src/app/_models/message';
 import { MembersService } from 'src/app/_services/members.service';
 import { MessageService } from 'src/app/_services/message.service';
@@ -16,6 +17,8 @@ export class MemberMessagesComponent implements OnInit {
   @Input() username: string;
   messageContent: string;
   loading = false;
+
+  testDate: Date = new Date('00.00.2000');
 
   constructor(public messageService: MessageService) { }
 

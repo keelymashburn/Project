@@ -14,14 +14,16 @@ namespace API.Controllers
     public class AdminController : BaseApiController
     {
         private readonly UserManager<AppUser> _userManager;
-        private readonly IUnitOfWork _unitOfWork;
         private readonly IPhotoService _photoService;
+        private readonly IPhotoRepository _photoRepository;
+        private readonly IUserRepository _userRepository;
 
-        public AdminController(UserManager<AppUser> userManager, IUnitOfWork unitOfWork, IPhotoService photoService)
+        public AdminController(UserManager<AppUser> userManager, IPhotoService photoService, IPhotoRepository photoRepository, IUserRepository userRepository)
         {
-            _unitOfWork = unitOfWork;
-            _photoService = photoService;
-            _userManager = userManager;
+            _photoService = photoService ?? throw new ArgumentNullException(nameof(photoService));
+            _photoRepository = photoRepository ?? throw new ArgumentNullException(nameof(photoRepository));
+            _userRepository = userRepository;
+            _userManager = userManager ?? throw new ArgumentNullException(nameof(userManager));
         }
 
         [Authorize(Policy = "RequireAdminRole")]
@@ -70,7 +72,7 @@ namespace API.Controllers
         [HttpGet("photos-to-moderate")]
         public async Task<ActionResult> GetPhotosForModeration()
         {
-            var photos = await _unitOfWork.PhotoRepository.GetUnapprovedPhotos();
+            var photos = await _photoRepository.GetUnapprovedPhotos();
 
             return Ok(photos);
         }
@@ -79,17 +81,17 @@ namespace API.Controllers
         [HttpPost("approve-photo/{photoId}")]
         public async Task<ActionResult> ApprovePhoto(int photoId)
         {
-            var photo = await _unitOfWork.PhotoRepository.GetPhotoById(photoId);
+            var photo = await _photoRepository.GetPhotoById(photoId);
 
             if (photo == null) return NotFound("Could not find photo");
 
             photo.IsApproved = true;
 
-            var user = await _unitOfWork.UserRepository.GetUserByPhotoId(photoId);
+            var user = await _userRepository.GetUserByPhotoId(photoId);
 
             if (!user.Photos.Any(x => x.IsMain)) photo.IsMain = true;
 
-            await _unitOfWork.Complete();
+            _photoRepository.UpdatePhoto(photo);
 
             return Ok();
         }
@@ -98,7 +100,7 @@ namespace API.Controllers
         [HttpPost("reject-photo/{photoId}")]
         public async Task<ActionResult> RejectPhoto(int photoId)
         {
-            var photo = await _unitOfWork.PhotoRepository.GetPhotoById(photoId);
+            var photo = await _photoRepository.GetPhotoById(photoId);
 
             if (photo == null) return NotFound("Could not find photo");
 
@@ -108,15 +110,14 @@ namespace API.Controllers
 
                 if (result.Result == "ok")
                 {
-                    _unitOfWork.PhotoRepository.RemovePhoto(photo);
+                    _photoRepository.RemovePhoto(photo);
                 }
             }
             else
             {
-                _unitOfWork.PhotoRepository.RemovePhoto(photo);
+                _photoRepository.RemovePhoto(photo);
             }
 
-            await _unitOfWork.Complete();
 
             return Ok();
         }

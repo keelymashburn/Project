@@ -16,6 +16,11 @@ namespace API.Data
             _context = context;
         }
 
+        public void AddPhoto(Photo photo)
+        {
+            throw new NotImplementedException();
+        }
+
         public async Task<Photo> GetPhotoById(int id)
         {
             return await _context.Photos
@@ -40,6 +45,11 @@ namespace API.Data
         public void RemovePhoto(Photo photo)
         {
             _context.Photos.Remove(photo);
+        }
+
+        public void UpdatePhoto(Photo photo)
+        {
+            throw new NotImplementedException();
         }
     }
 }

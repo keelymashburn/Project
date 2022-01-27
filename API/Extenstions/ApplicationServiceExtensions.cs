@@ -20,6 +20,10 @@ namespace API.Extenstions
             services.AddScoped<ITokenService, TokenService>();
             services.AddScoped<IPhotoService, PhotoService>();
             services.AddScoped<IUnitOfWork, UnitOfWork>();
+            services.AddScoped<IPhotoRepository, AdoPhotoRepository>();
+            services.AddScoped<IUserRepository, AdoUserRepository>();
+            services.AddScoped<ILikesRepository, AdoLikesRepository>();
+            services.AddScoped<IMessageRepository, AdoMessageRepository>();
             services.AddScoped<LogUserActivity>();
             services.AddAutoMapper(typeof(AutoMapperProfiles).Assembly);
             services.AddDbContext<DataContext>(options =>
@@ -56,7 +60,7 @@ namespace API.Extenstions
 
                 // Whether the connection string came from the local development configuration file
                 // or from the environment variable from Heroku, use it to set up your DbContext.
-                options.UseNpgsql(connStr);
+                options.UseSqlServer(connStr);
             });
 
 
